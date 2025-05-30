@@ -65,4 +65,14 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.classList.remove("active");
         }
     });
+
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+
+    burger.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+
+
 });
+

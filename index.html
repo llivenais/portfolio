@@ -14,11 +14,24 @@
     </a>
     <h1>Mon Portfolio</h1>
     <nav>
-      <ul class="menu">
-        <li><a href="#intro">Accueil</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <button class="burger" id="burger">
+        ☰
+      </button>
+      <nav id="menu" class="nav">
+        <ul class="menu">
+          <li><a href="#intro">Accueil</a></li>
+          <li><a href="#projets">Projets</a>
+            <ul class="submenu">
+              <li><a href="projects/projet1.html">Break The Code</a></li><br>
+              <li><a href="projects/projet2.html">Pattes à Porter</a></li><br>
+              <li><a href="projects/projet3.html">Trains</a></li></br>
+              <li><a href="projects/projet4.html">Assistance client</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="PA/PA.html">Apprentissage</a></li>
+        </ul>
+      </nav>
     </nav>
   </div>
 </header>
@@ -33,30 +46,30 @@
 
   <!-- Section info -->
   <section id="about" class="section section-about">
-    <h2>À propos de moi</h2>
     <div class="about-grid">
       <div class="about-card">
-        <h3>Biographie</h3>
-        <p>Étudiante de 19 ans en 2e année de BUT Informatique à l'IUT de Montpellier-Sète.
-        Je suis actuellement en alternance en tant que technicienne d'assistance chez Lundi Matin</p>
+        <h3>À propos de moi</h3>
+        <p>Étudiante de 20 ans en 2e année de BUT Informatique à l’IUT de Montpellier-Sète, je construis mon parcours entre théorie et pratique grâce à une alternance en tant que technicienne d’assistance chez Lundi Matin. Passionnée par les systèmes d'information et le travail d'équipe, je m’épanouis dans un environnement où rigueur, entraide et sens du détail font la différence.</p>
       </div>
       <div class="about-card">
-        <h3>Centres d'intérêts</h3>
-        <li>Depuis 12 ans, je pratique le handball, un sport qui m'a permis de développer des compétences essentielles pour le monde professionnel. Il m'a appris à travailler en équipe, à collaborer efficacement et à persévérer face aux défis. Grâce à cet esprit collectif et combatif, je sais m'adapter aux imprévus et rester concentré sur les objectifs, des atouts que j'applique dans mon travail au quotidien</li>
-        <li>J'aime beaucoup jouer à des jeux de sociétés, cela travaille ma patience et ma logique</li>
-        <li>J'apprécie prendre le temps de me plonger dans mes lectures favorites</li>
+        <h3>Ce qui me démarque</h3>
+        <p>Organisée, collaborative et attentive, je suis reconnue pour ma capacité à faire avancer les projets de manière fluide et structurée. Mon goût pour l'efficacité s’accompagne d’une grande sensibilité humaine : j’aime créer des liens, comprendre les besoins des autres, et contribuer à une ambiance de travail sereine.
+          Mon sens du détail m’aide à repérer les petites erreurs qui pourraient coûter cher, tandis que mon esprit collectif m’incite à toujours chercher des solutions partagées.</p>
       </div>
       <div class="about-card">
-        <h3>Parcours de formation</h3>
-        <p>Au collège, je découvre un attrait pour l'informatique. Cela m’a mené vers un bac général option NSI (Numériques et Sciences de l'informatique), puis vers un BUT Informatique, où je développe mes compétences techniques et humaines dans le parcours IAMSI (Intégration d'Applications et Management du Système d'Information).</p>
+        <h3>Un esprit sportif et curieux</h3>
+        <p>Depuis plus de 12 ans, le handball m’enseigne la persévérance, la réactivité et l’adaptation. Ce sport a façonné ma capacité à garder le cap même sous pression, et à toujours viser les objectifs collectifs.
+        <br>Je cultive aussi ma logique à travers les jeux de société, et ma concentration dans la lecture. Ces moments de détente m’aident à équilibrer rigueur technique et esprit critique.</p>
       </div>
       <div class="about-card">
-        <h3>Vision pour le futur</h3>
-        <p>Grâce à mes expériences, je confirme que je souhaiterais travailler auprès de client, dans le développement de solution, avec une équipe dynamique.</p>
+        <h3>Mon parcours</h3>
+        C’est au collège que l’informatique a éveillé ma curiosité. Cet intérêt s’est affirmé avec un bac général spécialité NSI, puis au sein du BUT Informatique, parcours IAMSI (Intégration d’Applications et Management du Système d’Information), qui me permet de développer autant mes compétences techniques que mes qualités relationnelles.<br>
+        J’ai également obtenu le BAFA, une expérience formatrice sur le plan humain, qui m’a appris à gérer un groupe, à anticiper les conflits et à m’adapter à toutes sortes de personnalités – des compétences précieuses que je transpose aujourd’hui dans ma vie professionnelle.
+        <br>Grâce à mes expériences, je confirme que je souhaiterais travailler auprès de client, dans le développement de solution, avec une équipe dynamique.
       </div>
     </div>
     <div class="intro-actions">
-      <a href="CV.pdf" class="btn-secondary" download>Télécharger mon CV</a>
+      <a href="cv.pdf" target= "_blank" class="btn-secondary" download>Télécharger mon CV</a>
     </div>
   </section>
 
@@ -119,6 +132,22 @@
           </div>
         </div>
       </div>
+    <!-- Projet 4 -->
+    <div class="project-card">
+      <img src="images/projet4.png" alt="Assistance client">
+      <div class="project-info">
+        <h3>Assistance client</h3>
+        <div class="project-tags">
+          <span>API</span>
+          <span>Logs</span>
+          <span>Relation client</span>
+        </div>
+        <p>Optimisation du Support Client Technique pour Limiter l’Escalade vers la Maintenance</p>
+        <div class="project-links">
+          <a href="projects/projet4.html" class="btn-primary">En savoir plus</a>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -127,17 +156,17 @@
   <section id="contact" class="section section-contact">
     <h2>Restons en contact !</h2>
     <p>Intéressé par mon profil ? N'hésitez pas à me contacter.</p>
-    <a href="https://www.linkedin.com/in/lola-livenais"> <img src="images/lk.png" alt="Linkedin" class="logot"></a>
-    <a href="https://github.com/llivenais"> <img src="images/gh.png" alt="GitHub" class="logot"></a>
+    <a target= "_blank" href="https://www.linkedin.com/in/lola-livenais"> <img src="images/lk.png" alt="Linkedin" class="logot"></a>
+    <a target= "_blank" href="https://github.com/llivenais"> <img src="images/gh.png" alt="GitHub" class="logot"></a>
     <br>
-    <a href="mailto:lola.livenais@gmail.com" class="btn-primary">M'écrire</a>
-    <a href="tel:+33666640877" class="btn-primary">M'appeler</a>
+    <a target= "_blank" href="mailto:lola.livenais@gmail.com" class="btn-primary">M'écrire</a>
+    <a target= "_blank" href="tel:+33666640877" class="btn-primary">M'appeler</a>
   </section>
 </main>
 
 
 <footer>
-  <p>&copy; 2024 Lola Livenais. Tous droits réservés.</p>
+  <p>&copy; 2025 Lola Livenais. Tous droits réservés.</p>
   <a href="#intro" class="scroll-to-top">&#8679; </a>
 </footer>
 
