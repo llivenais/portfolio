@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pattes à Porter</title>
+    <title>Pattes à Porter - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style-p.css">
+    <link rel="icon" type="image/png" href="../images/photo_profil.png">
 </head>
 <body>
 <header>
@@ -15,9 +19,7 @@
         </a>
         <h1>Mon Portfolio</h1>
         <nav>
-            <button class="burger" id="burger">
-                ☰
-            </button>
+            <button class="burger" id="burger">&#9776;</button>
             <nav id="menu" class="nav">
                 <ul class="menu">
                     <li><a href="../index.html#intro">Accueil</a></li>
@@ -26,7 +28,9 @@
                             <li><a href="projet1.html">Break The Code</a></li><br>
                             <li><a href="projet2.html">Pattes à Porter</a></li><br>
                             <li><a href="projet3.html">Trains</a></li><br>
-                            <li><a href="projet4.html">Assistance client</a></li>
+                            <li><a href="projet4.html">Assistance client</a></li><br>
+                            <li><a href="projet5.html">Grabastar</a></li><br>
+                            <li><a href="projet6.html">Optimisation de processus</a></li>
                         </ul>
                     </li>
                     <li><a href="../index.html#contact">Contact</a></li>
@@ -36,151 +40,202 @@
         </nav>
     </div>
 </header>
-<main>
+
+<main class="project-main">
+    <!-- Hero du projet -->
+    <section class="project-hero">
+        <h1>Site e-commerce - Pattes à Porter</h1>
+        <p class="project-subtitle">Développement d'une plateforme e-commerce complète de vente de déguisements pour animaux</p>
+        <div class="project-tags">
+            <span>PHP</span>
+            <span>MariaDB</span>
+            <span>MVC</span>
+            <span>GitLab</span>
+            <span>Sessions</span>
+        </div>
+    </section>
+
     <!-- Section Présentation -->
-    <section id="presentation" class="container project-presentation">
-        <h2>Site e-commerce - Pattes à Porter </h2>
-        <div class="project-info-box">
-            <h3>Présentation du projet</h3>
-            <p>Le projet consistait à concevoir et développer un site e-commerce complet dans le cadre d’un cours universitaire dédié au développement web. L’objectif principal était de mettre en pratique des compétences techniques et organisationnelles en créant une plateforme permettant :</p>
-            <br><li>La gestion des produits (création, modification, suppression, affichage)</li>
-            <li>La gestion des utilisateurs (inscription, connexion, mise à jour des comptes)</li>
-            <li>Un système de panier d’achat interactif et de commande</li>
-            <li>Une sécurité optimale pour protéger les données sensibles des utilisateurs</li>
-            <br><p>L’ensemble devait être ergonomique, responsive, et connecté à une base de données. Le projet s’inscrivait dans un contexte académique, mais visait à répondre aux standards d’un site professionnel.</p>
+    <section class="project-section">
+        <h2>Présentation du projet</h2>
+        <div class="presentation-box">
+            <p>Le projet consistait à concevoir et développer un <strong>site e-commerce complet</strong> dans le cadre d'un cours universitaire. L'objectif était de créer une plateforme permettant la gestion des produits, des utilisateurs, un système de panier d'achat interactif et une sécurité optimale pour protéger les données sensibles.</p>
+        </div>
+
+        <div class="info-cards" style="margin-top: 1.5rem;">
+            <div class="info-card-project">
+                <h3>Fonctionnalités</h3>
+                <ul>
+                    <li>Gestion des produits (CRUD)</li>
+                    <li>Gestion des utilisateurs</li>
+                    <li>Panier d'achat interactif</li>
+                    <li>Système de commandes</li>
+                </ul>
+            </div>
+            <div class="info-card-project">
+                <h3>Ma contribution</h3>
+                <ul>
+                    <li>Modèle relationnel BDD</li>
+                    <li>Système de panier en session</li>
+                    <li>Fonctions backend commandes</li>
+                    <li>Interfaces HTML/CSS/PHP</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <!-- Section Informations -->
-    <section id="informations" class="container">
-        <h3>Informations sur la réalisation</h3>
-        <div class="info-box">
-            <h3>Contexte</h3>
-            <p>Le projet s’inscrit dans le cadre d'un projet universitaire lors du 3ᵉ semestre du BUT informatique en groupe de 3 personnes</p>
-            <br><p>Le site développé devait être accessible en ligne, fonctionnel, et sécurisé, tout en respectant les bonnes pratiques de programmation. Il s'agissait d'un exercice de mise en pratique des connaissances théoriques tout en respectant des contraintes proches de celles du monde professionnel</p>
-        </div>
-        <div class="info-grid">
-            <div class="info-card">
+    <section class="project-section">
+        <h2>Informations sur la réalisation</h2>
+
+        <div class="info-cards">
+            <div class="info-card-project">
+                <h3>Contexte</h3>
+                <p>Projet universitaire du 3ᵉ semestre du BUT informatique, en groupe de 3 personnes. Site accessible en ligne, fonctionnel et sécurisé.</p>
+            </div>
+
+            <div class="info-card-project">
                 <h3>Durée</h3>
-                <p>7 semaines, du 7 octobre au 23 novembre</p>
+                <p>7 semaines, du 7 octobre au 23 novembre 2024.</p>
             </div>
-            <div class="info-card">
-                <h3>Contraintes</h3>
-                <li>L'utilisation de l'architecture MVC (Modèle/Vue/Contrôleur)</li>
-                <br><li>Sécurisation des données sensibles (sessions, mots de passe)</li>
-                <br><li>Respect des normes d’ergonomie et de performance pour offrir une expérience utilisateur fluide</li>
-            </div>
-            <div class="info-card">
+
+            <div class="info-card-project">
                 <h3>Méthode</h3>
-                <li>Utilisation de Git pour une gestion optimale des versions du code et une collaboration efficace</li>
-                <br><li>Réunions hebdomadaires pour discuter des avancements, résoudre les problèmes et ajuster les priorités</li>
-                <br><li>Suivi des tâches via Microsoft To Do pour garantir une répartition claire des responsabilités</li>
+                <ul>
+                    <li>Git pour la gestion des versions</li>
+                    <li>Réunions hebdomadaires</li>
+                    <li>Suivi via Microsoft To Do</li>
+                </ul>
             </div>
         </div>
-        <div class="info-box">
+
+        <div class="info-card-project" style="margin-top: 1.5rem;">
+            <h3>Contraintes techniques</h3>
+            <ul>
+                <li>Architecture <strong>MVC</strong> (Modèle/Vue/Contrôleur)</li>
+                <li>Sécurisation des données sensibles (sessions, mots de passe)</li>
+                <li>Respect des normes d'ergonomie et de performance</li>
+            </ul>
+        </div>
+
+        <div class="results-box">
             <h3>Résultats obtenus</h3>
-            <p>Dans ce projet, ma contribution principale a consisté à la création initiale de notre Modèle relationnel pour la base de données. J’ai également pris en charge la mise en place du système de gestion des paniers d'achat (HTML, CSS, PHP) en session. De plus, j’ai contribué à la mise en place des fonctions backend permettant de traiter les commandes</p>
-            <br><li>Le site répond à toutes les exigences initiales : gestion des produits, des utilisateurs, des paniers et des commandes</li>
-            <br><li>Les interfaces sont attrayantes, intuitives et adaptées à tous les formats d’écran</li>
-            <br><li>Mise en œuvre de sessions sécurisées, chiffrement des mots de passe, et validation des formulaires pour prévenir les failles potentielles</li>
+            <ul>
+                <li>Site répondant à toutes les exigences : produits, utilisateurs, paniers, commandes</li>
+                <li>Interfaces attrayantes, intuitives et responsives</li>
+                <li>Sessions sécurisées, chiffrement des mots de passe, validation des formulaires</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Section Liens -->
-    <section id="liens" class="container project-links">
-        <div class="grid">
-            <div class="image-box">
-                <img src="../images/P2/BD.png" alt="Plateforme CTF" />
-                <p>Tables dans la base de données</p>
+    <!-- Section Galerie -->
+    <section class="project-section">
+        <h2>Aperçu du projet</h2>
+
+        <div class="media-gallery">
+            <div class="media-item">
+                <img src="../images/P2/BD.png" alt="Base de données">
+                <div class="media-caption">Tables de la base de données</div>
             </div>
-            <div class="image-box">
+
+            <div class="media-item">
                 <video src="../images/P2/PAP1.mp4" controls></video>
-                <p>Système de paniers</p>
+                <div class="media-caption">Système de paniers</div>
             </div>
-            <div class="image-box">
+
+            <div class="media-item">
                 <video src="../images/P2/PAP2.mp4" controls></video>
-                <p>Système de commandes</p>
+                <div class="media-caption">Système de commandes</div>
             </div>
-            <div class="image-box">
-                <img src="../images/P2/BD1.png" alt="Page tutoriels" />
-                <p>Liste des produits</p>
+
+            <div class="media-item">
+                <img src="../images/P2/BD1.png" alt="Liste produits">
+                <div class="media-caption">Liste des produits</div>
             </div>
-            <div class="image-box">
-                <img src="../images/P2/branche.png" alt="Branche Git" />
-                <p>Utilisation des branches sur GitLab</p>
+
+            <div class="media-item">
+                <img src="../images/P2/branche.png" alt="Branches Git">
+                <div class="media-caption">Branches sur GitLab</div>
             </div>
-            <div class="image-box">
-                <img src="../images/P2/Commit.png" alt="Commit" />
-                <p>Utilisation d'une norme pour les commits</p>
+
+            <div class="media-item">
+                <img src="../images/P2/Commit.png" alt="Commits">
+                <div class="media-caption">Norme de commits</div>
             </div>
         </div>
     </section>
-
-
 
     <!-- Section Compétences -->
-    <section id="competences" class="container">
-        <h3>Compétences et outils</h3>
+    <section class="project-section">
+        <h2>Compétences et outils</h2>
+
         <div class="skills-grid">
             <div class="skill-card">
                 <div class="card-front">
                     <img src="../images/php.png" alt="PHP">
                 </div>
                 <div class="card-back">
-                    <li>Système de panier : Gestion des articles (ajout, suppression, mise à jour) avec synchronisation en temps réel et gestion via sessions</li>
+                    <p>Système de panier : ajout, suppression, mise à jour avec gestion via sessions</p>
                 </div>
             </div>
+
             <div class="skill-card">
                 <div class="card-front">
-                    <img src="../images/MDB.png" alt="PhpMyAdmin">
+                    <img src="../images/MDB.png" alt="MariaDB">
                 </div>
                 <div class="card-back">
-                    <p>Intégration de MariaDB pour stocker et manipuler les données.</p>
+                    <p>Intégration de MariaDB pour stocker et manipuler les données</p>
                 </div>
             </div>
+
             <div class="skill-card">
                 <div class="card-front">
                     <img src="../images/HC.jpg" alt="HTML/CSS">
                 </div>
                 <div class="card-back">
-                    <p>Front-end : Création d’interfaces ergonomiques et responsives en HTML, CSS
-                    </p>
+                    <p>Création d'interfaces ergonomiques et responsives</p>
                 </div>
             </div>
+
             <div class="skill-card">
                 <div class="card-front">
-                    <img src="../images/BE.png" alt="BackEnd">
+                    <img src="../images/BE.png" alt="Backend">
                 </div>
                 <div class="card-back">
-                    <p>Utilisation de requêtes préparées pour sécuriser les interactions avec la base de données.
-                    </p>
+                    <p>Requêtes préparées pour sécuriser les interactions BDD</p>
                 </div>
             </div>
+
             <div class="skill-card">
                 <div class="card-front">
-                    <img src="../images/Git.png" alt="GIT">
+                    <img src="../images/Git.png" alt="Git">
                 </div>
                 <div class="card-back">
-                    <p>Utilisation des outils collaboratifs (Git, Microsoft ToDo)</p>
+                    <p>Outils collaboratifs : Git, Microsoft ToDo</p>
                 </div>
             </div>
+
             <div class="skill-card">
                 <div class="card-front">
-                    <img src="../images/TW.jpg" alt="Travail d'équipe">
+                    <img src="../images/TW.jpg" alt="Travail équipe">
                 </div>
                 <div class="card-back">
-                    <p>Travail en équipe avec des échanges constructifs et une bonne communication.</p>
+                    <p>Travail en équipe avec communication efficace</p>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <!-- Navigation -->
+    <div class="project-nav">
+        <a href="projet1.html" class="prev">← Projet précédent</a>
+        <a href="projet3.html">Projet suivant →</a>
+    </div>
 </main>
 
 <footer>
-    <p>&copy; 2025 Lola Livenais. Tous droits réservés.</p>
-    <a href="#presentation" class="scroll-to-top">&#8679; </a>
+    <p>&copy; 2026 Lola Livenais. Tous droits réservés.</p>
+    <a href="#" class="scroll-to-top">&#8679;</a>
 </footer>
 
 <script src="../scripts.js"></script>
