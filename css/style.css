@@ -689,7 +689,7 @@ section h3 {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.95);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -697,6 +697,7 @@ section h3 {
   opacity: 0;
   transition: var(--transition);
   z-index: 2000;
+  padding: 2rem;
 }
 
 .modal.active {
@@ -704,38 +705,49 @@ section h3 {
   opacity: 1;
 }
 
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-media,
 .modal img,
 .modal video {
   max-width: 90%;
-  max-height: 90%;
+  max-height: 85vh;
   border-radius: 12px;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
 }
 
 .modal-close {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1.5rem;
+  right: 1.5rem;
   background: white;
   color: var(--dark-color);
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  padding: 0;
   border-radius: 50%;
   cursor: pointer;
   font-weight: bold;
   border: none;
   transition: var(--transition);
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2001;
 }
 
 .modal-close:hover {
   background: var(--secondary-color);
   color: white;
-  transform: rotate(90deg);
+  transform: rotate(90deg) scale(1.1);
 }
 
 /* Tabs (Portfolio d'apprentissage) */
@@ -964,15 +976,23 @@ footer {
     border-left: none;
   }
 
+  .modal-media,
   .modal img,
   .modal video {
-    max-width: 95%;
-    max-height: 80%;
+    max-width: 98%;
+    max-height: 75vh;
   }
 
   .modal-close {
-    top: 1rem;
-    right: 1rem;
+    top: 0.8rem;
+    right: 0.8rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .modal {
+    padding: 1rem;
   }
 
   .scroll-to-top {
