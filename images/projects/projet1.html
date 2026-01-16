@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break The Code - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-p.css">
+    <link rel="icon" type="image/png" href="../images/photo_profil.png">
+</head>
+<body>
+<header>
+    <div class="container header-content">
+        <a href="../index.html">
+            <img src="../images/photo_profil.png" alt="Photo de Lola" class="logo">
+        </a>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <button class="burger" id="burger">&#9776;</button>
+            <nav id="menu" class="nav">
+                <ul class="menu">
+                    <li><a href="../index.html#intro">Accueil</a></li>
+                    <li><a href="../index.html#projets">Projets</a>
+                        <ul class="submenu">
+                            <li><a href="projet1.html">Break The Code</a></li><br>
+                            <li><a href="projet2.html">Pattes à Porter</a></li><br>
+                            <li><a href="projet3.html">Trains</a></li><br>
+                            <li><a href="projet4.html">Assistance client</a></li><br>
+                            <li><a href="projet5.html">Grabastar</a></li><br>
+                            <li><a href="projet6.html">Optimisation de processus</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <li><a href="../PA/PA.html">Apprentissage</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </div>
+</header>
+
+<main class="project-main">
+    <!-- Hero du projet -->
+    <section class="project-hero">
+        <h1>Plateforme Capture The Flag</h1>
+        <p class="project-subtitle">Développement d'une plateforme interactive de cybersécurité pour l'association Yggame</p>
+        <div class="project-tags">
+            <span>Docker</span>
+            <span>CTFd</span>
+            <span>Python</span>
+            <span>Cybersécurité</span>
+            <span>Scrum</span>
+        </div>
+    </section>
+
+    <!-- Section Présentation -->
+    <section class="project-section">
+        <h2>Présentation du projet</h2>
+        <div class="presentation-box">
+            <p>L'association <strong>Yggame</strong> a pour objectif de promouvoir l'esprit de communauté et d'échange culturel dans le domaine des jeux vidéo. Elle nous a demandé d'intégrer une plateforme axée sur la cybersécurité, intégrant des défis sur plusieurs thèmes, des tutoriels, pour sensibiliser à cette discipline de manière interactive : un <strong>"Capture The Flag"</strong>.</p>
+        </div>
+    </section>
+
+    <!-- Section Informations -->
+    <section class="project-section">
+        <h2>Informations sur la réalisation</h2>
+
+        <div class="info-cards">
+            <div class="info-card-project">
+                <h3>Contexte</h3>
+                <p>Projet réalisé dans le cadre de la SAE du 3ᵉ semestre du BUT informatique, en collaboration avec l'association Yggame, en équipe de 5 personnes.</p>
+            </div>
+
+            <div class="info-card-project">
+                <h3>Durée</h3>
+                <p>Un semestre, de septembre 2024 à janvier 2025, divisé en plusieurs sprints selon la méthodologie agile.</p>
+            </div>
+
+            <div class="info-card-project">
+                <h3>Méthode</h3>
+                <p>Méthodologie <strong>Scrum</strong> avec des sprints de deux semaines. Utilisation de Git (GitLab) pour le versionnement et <strong>Docker</strong> pour l'hébergement de CTFd.</p>
+            </div>
+        </div>
+
+        <div class="info-card-project" style="margin-top: 1.5rem;">
+            <h3>Contraintes techniques</h3>
+            <ul>
+                <li>Utilisation du langage <strong>C</strong> comme catégorie principale de défis</li>
+                <li>Interface conçue pour minimiser la charge cognitive</li>
+                <li>Infrastructure hébergée par l'association</li>
+                <li>Utilisation de <strong>CTFd</strong>, solution open source</li>
+                <li>Cohérence visuelle et traduction de la plateforme</li>
+            </ul>
+        </div>
+
+        <div class="results-box">
+            <h3>Résultats obtenus</h3>
+            <ul>
+                <li>Plateforme intuitive et traduite avec plusieurs catégories : web, C, stéganographie...</li>
+                <li>3 tutoriels interactifs écrits + 1 vidéo sur la cryptographie</li>
+                <li>18 défis cryptographie (César, Vigenère, RSA, El Gamal, hachage) avec corrections Python</li>
+                <li>17 défis OSINT sur la plateforme GallopGram</li>
+                <li>Plateforme GallopGram avec fonctionnalités interactives</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Galerie -->
+    <section class="project-section">
+        <h2>Aperçu du projet</h2>
+
+        <div class="media-gallery">
+            <a href="https://youtu.be/kHzdnjK8Waw" target="_blank" class="btn-primary">Découvrir un tutoriel</a>
+
+            <div class="media-item">
+                <img src="../images/P1/CTF.png" alt="Plateforme CTF">
+                <div class="media-caption">Challenges sur le CTF</div>
+            </div>
+
+            <div class="media-item">
+                <img src="../images/P1/Tuto.png" alt="Page tutoriels">
+                <div class="media-caption">Page des tutoriels</div>
+            </div>
+
+            <div class="media-item">
+                <video src="../images/P1/GallopGram.webm" controls></video>
+                <div class="media-caption">Site GallopGram</div>
+            </div>
+
+            <div class="media-item">
+                <video src="../images/P1/defi-gallopgram.webm" controls></video>
+                <div class="media-caption">Résolution d'un défi GallopGram</div>
+            </div>
+
+            <div class="media-item">
+                <video src="../images/P1/Crypto.mp4" controls></video>
+                <div class="media-caption">Défi chiffrement Vigenère</div>
+            </div>
+
+            <div class="media-item">
+                <video src="../images/P1/Correction.mp4" controls></video>
+                <div class="media-caption">Correction Python RSA</div>
+            </div>
+
+            <div class="media-item">
+                <img src="../images/P1/Issues.png" alt="Issues">
+                <div class="media-caption">Issues lors du projet</div>
+            </div>
+
+            <div class="media-item">
+                <img src="../images/P1/BC.png" alt="Burndown chart">
+                <div class="media-caption">Burndown chart</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section class="project-section">
+        <h2>Compétences et outils</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="card-front">
+                    <img src="../images/CTFD.png" alt="CTFd">
+                </div>
+                <div class="card-back">
+                    <p>Conception des défis de cryptographie et implémentation technique</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-front">
+                    <img src="../images/python.jpg" alt="Python">
+                </div>
+                <div class="card-back">
+                    <p>Scripts de correction automatique des défis cryptographie</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-front">
+                    <img src="../images/HC.jpg" alt="HTML/CSS">
+                </div>
+                <div class="card-back">
+                    <p>Conception et mise en page des tutoriels</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-front">
+                    <img src="../images/Git.png" alt="GitLab">
+                </div>
+                <div class="card-back">
+                    <p>Gestion des versions et collaboration en équipe</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-front">
+                    <img src="../images/SA.png" alt="SCRUM">
+                </div>
+                <div class="card-back">
+                    <p>Gestion agile des tâches et organisation des sprints</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-front">
+                    <img src="../images/discord.png" alt="Discord">
+                </div>
+                <div class="card-back">
+                    <p>Coordination via Discord et réunions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="project-nav">
+        <a href="../index.html#projets" class="prev">← Tous les projets</a>
+        <a href="projet2.html">Projet suivant →</a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Lola Livenais. Tous droits réservés.</p>
+    <a href="#" class="scroll-to-top">&#8679;</a>
+</footer>
+
+<script src="../scripts.js"></script>
+</body>
+</html>

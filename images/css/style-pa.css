@@ -1,0 +1,225 @@
+/* Styles specifiques au Portfolio d'Apprentissage */
+
+/* Hero Section PA */
+.pa-hero {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.pa-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.pa-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-muted);
+}
+
+/* Section PA */
+.pa-section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header du contenu */
+.content-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(126, 201, 229, 0.2);
+}
+
+.content-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.content-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* Grille des competences */
+.competence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Carte de competence */
+.competence-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(126, 201, 229, 0.15);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.competence-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.competence-card:hover::before {
+    transform: scaleX(1);
+}
+
+.competence-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+/* Numero de competence */
+.competence-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(126, 201, 229, 0.3);
+}
+
+.competence-card h3 {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.competence-card p {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.competence-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.competence-card a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Tags de competence */
+.competence-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.competence-tags span {
+    background: linear-gradient(135deg, rgba(126, 201, 229, 0.15), rgba(232, 152, 152, 0.1));
+    color: var(--dark-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(126, 201, 229, 0.2);
+    transition: var(--transition-fast);
+}
+
+.competence-tags span:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Animation des cartes */
+.competence-card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: cardSlideUp 0.5s ease forwards;
+}
+
+.competence-card:nth-child(1) { animation-delay: 0.1s; }
+.competence-card:nth-child(2) { animation-delay: 0.2s; }
+.competence-card:nth-child(3) { animation-delay: 0.3s; }
+.competence-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes cardSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Override tabs pour PA */
+.pa-section .tabs {
+    margin-bottom: 2rem;
+}
+
+.pa-section .content {
+    padding: 2rem;
+    border-radius: var(--border-radius);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pa-hero h1 {
+        font-size: 2rem;
+    }
+
+    .pa-hero p {
+        font-size: 1rem;
+    }
+
+    .competence-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .competence-card {
+        padding: 1.5rem;
+    }
+
+    .content-header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pa-hero {
+        padding: 3rem 1rem;
+    }
+
+    .pa-section {
+        padding: 2rem 1rem;
+    }
+
+    .competence-number {
+        width: 40px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+}

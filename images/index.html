@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lola Livenais - Portfolio</title>
+    <link rel="icon" type="image/png" href="images/photo_profil.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-index.css">
+</head>
+<body>
+<header>
+    <div class="container header-content">
+        <a href="index.html">
+            <img src="images/photo_profil.png" alt="Photo de Lola" class="logo">
+        </a>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <button class="burger" id="burger">&#9776;</button>
+            <nav id="menu" class="nav">
+                <ul class="menu">
+                    <li><a href="#intro">Accueil</a></li>
+                    <li><a href="#projets">Projets</a>
+                        <ul class="submenu">
+                            <li><a href="projects/projet1.html">Break The Code</a></li><br>
+                            <li><a href="projects/projet2.html">Pattes à Porter</a></li><br>
+                            <li><a href="projects/projet3.html">Trains</a></li><br>
+                            <li><a href="projects/projet4.html">Assistance client</a></li><br>
+                            <li><a href="projects/projet5.html">Grabastar</a></li><br>
+                            <li><a href="projects/projet6.html">Optimisation de processus</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="PA/PA.html">Apprentissage</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section - Plein écran -->
+    <section id="intro" class="hero-section">
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="images/photo_profil.png" alt="Photo de Lola">
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting">Bonjour, je suis</p>
+                <h1 class="hero-name">Lola Livenais</h1>
+                <p class="hero-title">Étudiante en BUT Informatique</p>
+                <p class="hero-description">Ce que j'apprécie dans l'informatique, c'est pouvoir concrétiser des idées abstraites en des projets concrets.</p>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn-primary">Voir mes projets</a>
+                    <a href="CV.pdf" target="_blank" class="btn-secondary" download="CV_Lola_Livenais.pdf">Télécharger mon CV</a>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- Section À propos - Layout moderne -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-header">
+                <h2>À propos de moi</h2>
+                <p class="about-subtitle">Découvrez mon parcours et ce qui me passionne</p>
+            </div>
+
+            <div class="about-bento">
+                <div class="bento-item">
+                    <div class="bento-icon">👩‍💻</div>
+                    <h3>Mon profil</h3>
+                    <p>Étudiante de 20 ans en 3e année de BUT Informatique à l'IUT de Montpellier-Sète. Actuellement en alternance chez Renestance comme chargée d'optimisation des processus.</p>
+                </div>
+
+                <div class="bento-item">
+                    <div class="bento-icon">✨</div>
+                    <h3>Ce qui me démarque</h3>
+                    <p>Organisée, collaborative et attentive. Mon sens du détail m'aide à repérer les erreurs et à faire avancer les projets efficacement.</p>
+                </div>
+
+                <div class="bento-item">
+                    <div class="bento-icon">🤝</div>
+                    <h3>Esprit d'équipe</h3>
+                    <p>J'aime créer des liens, comprendre les besoins des autres et contribuer à une ambiance de travail sereine et productive.</p>
+                </div>
+
+                <div class="bento-item">
+                    <div class="bento-icon">🏐</div>
+                    <h3>Sport & loisirs</h3>
+                    <p>13 ans de handball m'ont appris la persévérance. Je cultive aussi ma logique avec les jeux de société et ma concentration dans la lecture.</p>
+                </div>
+
+                <div class="bento-item bento-wide">
+                    <div class="bento-icon">🎓</div>
+                    <h3>Mon parcours</h3>
+                    <p>Passionnée par l'informatique depuis le collège. Bac général spécialité NSI, puis BUT Informatique parcours IAMSI. J'ai aussi obtenu le BAFA, une expérience formatrice qui m'a appris à gérer un groupe et anticiper les conflits. Je souhaite travailler auprès de clients, dans le développement de solutions, avec une équipe dynamique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets - Grille moderne -->
+    <section id="projets" class="projects-section">
+        <div class="projects-container">
+            <div class="projects-header">
+                <h2>Mes projets</h2>
+                <p class="projects-subtitle">Une sélection de mes réalisations académiques et professionnelles</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <a href="projects/projet1.html" class="project-tile">
+                    <div class="project-image">
+                        <img src="images/CTFD.png" alt="Projet CTF">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-tags">
+                            <span>Docker</span>
+                            <span>Python</span>
+                        </div>
+                        <h3>Break The Code</h3>
+                        <p>Plateforme CTF</p>
+                        <span class="project-arrow">→</span>
+                    </div>
+                </a>
+
+                <!-- Projet 2 -->
+                <a href="projects/projet2.html" class="project-tile">
+                    <div class="project-image">
+                        <img src="images/projet2.jpg" alt="PAP">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MariaDB</span>
+                        </div>
+                        <h3>Pattes à Porter</h3>
+                        <p>Site e-commerce</p>
+                        <span class="project-arrow">→</span>
+                    </div>
+                </a>
+
+                <!-- Projet 3 -->
+                <a href="projects/projet3.html" class="project-tile">
+                    <div class="project-image">
+                        <img src="images/projet3.png" alt="Trains">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>JavaFX</span>
+                        </div>
+                        <h3>Trains</h3>
+                        <p>Jeu de cartes</p>
+                        <span class="project-arrow">→</span>
+                    </div>
+                </a>
+
+                <!-- Projet 4 -->
+                <a href="projects/projet4.html" class="project-tile">
+                    <div class="project-image">
+                        <img src="images/projet4.png" alt="Assistance client">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-tags">
+                            <span>API</span>
+                            <span>Support</span>
+                        </div>
+                        <h3>Assistance client</h3>
+                        <p>Support technique N2</p>
+                        <span class="project-arrow">→</span>
+                    </div>
+                </a>
+
+                <!-- Projet 5 -->
+                <a href="projects/projet5.html" class="project-tile">
+                    <div class="project-image">
+                        <img src="images/projet5.png" alt="Grabastar">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-tags">
+                            <span>Symfony</span>
+                            <span>AJAX</span>
+                        </div>
+                        <h3>Grabastar</h3>
+                        <p>Réseau social</p>
+                        <span class="project-arrow">→</span>
+                    </div>
+                </a>
+
+                <!-- Projet 6 -->
+                <a href="projects/projet6.html" class="project-tile">
+                    <div class="project-image">
+                        <img src="images/projet6.png" alt="Optimisation de processus">
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-tags">
+                            <span>Zoho</span>
+                            <span>Automatisation</span>
+                        </div>
+                        <h3>Optimisation de processus</h3>
+                        <p>Workflows automatisés</p>
+                        <span class="project-arrow">→</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact - Design moderne -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-content">
+                <h2>Restons en contact</h2>
+                <p class="contact-subtitle">Intéressé par mon profil ? N'hésitez pas à me contacter pour discuter de vos projets.</p>
+
+                <div class="contact-methods">
+                    <a href="mailto:lola.livenais@gmail.com" class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <span>M'écrire</span>
+                    </a>
+                    <a href="tel:+33666640877" class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <span>M'appeler</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lola-livenais" target="_blank" class="contact-card">
+                        <img src="images/lk.png" alt="LinkedIn" class="contact-logo">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/llivenais" target="_blank" class="contact-card">
+                        <img src="images/gh.png" alt="GitHub" class="contact-logo">
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Lola Livenais. Tous droits réservés.</p>
+    <a href="#intro" class="scroll-to-top">&#8679;</a>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

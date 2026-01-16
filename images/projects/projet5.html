@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grabastar - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-p.css">
+    <link rel="icon" type="image/png" href="../images/photo_profil.png">
+</head>
+<body>
+<header>
+    <div class="container header-content">
+        <a href="../index.html">
+            <img src="../images/photo_profil.png" alt="Photo de Lola" class="logo">
+        </a>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <button class="burger" id="burger">&#9776;</button>
+            <nav id="menu" class="nav">
+                <ul class="menu">
+                    <li><a href="../index.html#intro">Accueil</a></li>
+                    <li><a href="../index.html#projets">Projets</a>
+                        <ul class="submenu">
+                            <li><a href="projet1.html">Break The Code</a></li><br>
+                            <li><a href="projet2.html">Pattes à Porter</a></li><br>
+                            <li><a href="projet3.html">Trains</a></li><br>
+                            <li><a href="projet4.html">Assistance client</a></li><br>
+                            <li><a href="projet5.html">Grabastar</a></li><br>
+                            <li><a href="projet6.html">Optimisation de processus</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <li><a href="../PA/PA.html">Apprentissage</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </div>
+</header>
+
+<main class="project-main">
+    <!-- Hero du projet -->
+    <section class="project-hero">
+        <h1>Grabastar - Réseau social</h1>
+        <p class="project-subtitle">Développement d'une plateforme de réseau social complète avec gestion utilisateur avancée</p>
+        <div class="project-tags">
+            <span>Symfony</span>
+            <span>PostgreSQL</span>
+            <span>JavaScript</span>
+            <span>AJAX</span>
+            <span>GitLab</span>
+        </div>
+    </section>
+
+    <!-- Section Présentation -->
+    <section class="project-section">
+        <h2>Présentation du projet</h2>
+        <div class="presentation-box">
+            <p><strong>Grabastar</strong> est un projet de réseau social développé dans le cadre d'un cours de programmation web avancée. L'objectif était de créer une plateforme complète permettant aux utilisateurs de s'inscrire, gérer leur profil et partager du contenu, tout en mettant l'accent sur la <strong>sécurité</strong> et l'<strong>expérience utilisateur</strong>.</p>
+        </div>
+
+        <div class="info-cards" style="margin-top: 1.5rem;">
+            <div class="info-card-project">
+                <h3>Fonctionnalités</h3>
+                <ul>
+                    <li>Inscription avec validation temps réel</li>
+                    <li>Gestion de profil utilisateur</li>
+                    <li>Upload de photos de profil</li>
+                    <li>Sécurisation SHA256</li>
+                </ul>
+            </div>
+            <div class="info-card-project">
+                <h3>Ma contribution</h3>
+                <ul>
+                    <li>Toute la partie utilisateur</li>
+                    <li>Système d'inscription complet</li>
+                    <li>Gestion des avatars</li>
+                    <li>Interface de modification</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Informations -->
+    <section class="project-section">
+        <h2>Informations sur la réalisation</h2>
+
+        <div class="info-cards">
+            <div class="info-card-project">
+                <h3>Contexte</h3>
+                <p>Projet universitaire du 5ème semestre du BUT Informatique, en équipe de 4 personnes. J'étais responsable de toute la partie utilisateur.</p>
+            </div>
+
+            <div class="info-card-project">
+                <h3>Durée</h3>
+                <p>1 mois de développement intensif.</p>
+            </div>
+
+            <div class="info-card-project">
+                <h3>Méthode</h3>
+                <ul>
+                    <li>Architecture MVC Symfony</li>
+                    <li>JavaScript/AJAX temps réel</li>
+                    <li>Git pour la collaboration</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info-card-project" style="margin-top: 1.5rem;">
+            <h3>Contraintes techniques</h3>
+            <ul>
+                <li>Framework <strong>Symfony</strong> pour la structure MVC</li>
+                <li>Base de données <strong>PostgreSQL</strong></li>
+                <li>Vérifications en temps réel sans rechargement (AJAX)</li>
+                <li>Sécurisation des données utilisateurs avec hash SHA256</li>
+            </ul>
+        </div>
+
+        <div class="results-box">
+            <h3>Résultats obtenus</h3>
+            <ul>
+                <li>Système d'inscription complet avec validation en temps réel du login</li>
+                <li>Espace privé avec gestion complète du profil utilisateur</li>
+                <li>Système de gestion de photo de profil (upload, modification, suppression)</li>
+                <li>Accès aux avatars via URL sécurisée avec hash SHA256</li>
+                <li>Maîtrise de Symfony et compétences solides en développement full-stack</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Galerie -->
+    <section class="project-section">
+        <h2>Aperçu du projet</h2>
+
+        <div class="media-gallery">
+            <div class="media-item">
+                <img src="../images/inscription.png" alt="Page d'inscription">
+                <div class="media-caption">Interface d'inscription</div>
+            </div>
+
+            <div class="media-item">
+                <video src="../images/inscription.mp4" controls></video>
+                <div class="media-caption">Processus d'inscription</div>
+            </div>
+
+            <div class="media-item">
+                <video src="../images/modification.mp4" controls></video>
+                <div class="media-caption">Modification du profil</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section class="project-section">
+        <h2>Compétences et outils</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="card-front">
+                    <img src="../images/symfony.svg" alt="Symfony">
+                </div>
+                <div class="card-back">
+                    <p>Framework Symfony, architecture MVC, gestion des formulaires et entités</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-front">
+                    <img src="../images/javascript.png" alt="JavaScript">
+                </div>
+                <div class="card-back">
+                    <p>Fonctionnalités interactives avec JavaScript et requêtes AJAX</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-front">
+                    <img src="../images/HC.jpg" alt="HTML/CSS">
+                </div>
+                <div class="card-back">
+                    <p>Interfaces utilisateur responsives et ergonomiques</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-front">
+                    <img src="../images/Git.png" alt="Git">
+                </div>
+                <div class="card-back">
+                    <p>Gestion collaborative du code source et versionnement</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-front">
+                    <img src="../images/BE.png" alt="Backend">
+                </div>
+                <div class="card-back">
+                    <p>Sécurisation avec hash SHA256 et validation des données</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-front">
+                    <img src="../images/TW.jpg" alt="Travail équipe">
+                </div>
+                <div class="card-back">
+                    <p>Travail en équipe et répartition des tâches par domaine</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="project-nav">
+        <a href="projet4.html" class="prev">← Projet précédent</a>
+        <a href="projet6.html">Projet suivant →</a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Lola Livenais. Tous droits réservés.</p>
+    <a href="#" class="scroll-to-top">&#8679;</a>
+</footer>
+
+<script src="../scripts.js"></script>
+</body>
+</html>
