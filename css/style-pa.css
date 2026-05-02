@@ -185,6 +185,49 @@
     border-radius: var(--border-radius);
 }
 
+/* Card top row (number + badge) */
+.card-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.card-top-row .competence-number {
+    margin-bottom: 0;
+}
+
+/* Status badges */
+.status-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+    letter-spacing: 0.03em;
+}
+
+.status-badge.en-cours {
+    background: rgba(243, 156, 18, 0.12);
+    color: #D68910;
+    border: 1px solid rgba(243, 156, 18, 0.3);
+}
+
+.status-badge.acquis {
+    background: rgba(39, 174, 96, 0.12);
+    color: #1E8449;
+    border: 1px solid rgba(39, 174, 96, 0.3);
+}
+
+/* CE codes */
+.ce-codes {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    font-family: monospace;
+    letter-spacing: 0.05em;
+    opacity: 0.75;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .pa-hero h1 {

@@ -51,157 +51,184 @@
     <!-- Tabs -->
     <section class="pa-section">
         <div class="tabs">
-            <div class="tab active" onclick="showTab('opt')">Optimiser des applications</div>
-            <div class="tab" onclick="showTab('admin')">Administrer des systèmes</div>
-            <div class="tab" onclick="showTab('data')">Gérer des données</div>
+            <div class="tab active" onclick="showTab('realiser')">Réaliser</div>
+            <div class="tab" onclick="showTab('collaborer')">Collaborer</div>
+            <div class="tab" onclick="showTab('conduire')">Conduire</div>
         </div>
 
-        <!-- Contenu Optimiser -->
-        <div id="opt" class="content active">
+        <!-- Contenu Réaliser -->
+        <div id="realiser" class="content active">
             <div class="content-header">
-                <h2>Optimiser des applications</h2>
-                <p class="content-subtitle">Compétences en algorithmique, structures de données et sécurité</p>
+                <h2>Réaliser des applications</h2>
+                <p class="content-subtitle">Adapter des applications sur un ensemble de supports</p>
+                <p class="ce-codes">CE : CE1.01 | CE1.03 | CE1.04 | CE1.06</p>
             </div>
-
             <div class="competence-grid">
                 <div class="competence-card">
-                    <div class="competence-number">AC1</div>
-                    <h3>Structures de données complexes</h3>
-                    <p>Dans le projet <a href="../projects/projet3.html">Trains</a>, j'ai analysé les besoins fonctionnels pour choisir des structures de données adaptées. J'ai opté pour des <strong>maps (tableaux associatifs)</strong> permettant une recherche rapide par clé.</p>
-                    <div class="competence-tags">
-                        <span>Maps</span>
-                        <span>Graphes</span>
-                        <span>Performance</span>
+                    <div class="card-top-row">
+                        <div class="competence-number">AC1</div>
+                        <span class="status-badge acquis">Acquis</span>
                     </div>
-                </div>
-
-                <div class="competence-card">
-                    <div class="competence-number">AC2</div>
-                    <h3>Techniques algorithmiques</h3>
-                    <p>J'ai développé plusieurs <strong>algorithmes liés à la théorie des graphes</strong> : calcul du plus court chemin et du chemin le moins coûteux. Ce travail m'a permis de formuler des situations complexes et valider leur efficacité.</p>
+                    <h3>Architectures adaptées</h3>
+                    <p>Sur <a href="../projects/projet2.html">Pattes à Porter</a>, j'ai implémenté et justifié le patron <strong>MVC en PHP</strong> dans mon rapport, argumentant la séparation des responsabilités pour un e-commerce. Sur <a href="../projects/projet1.html">Break The Code</a>, j'ai structuré les catégories de défis (web, C, crypto, OSINT) en anticipant la montée en charge et la maintenabilité.</p>
                     <div class="competence-tags">
-                        <span>Dijkstra</span>
-                        <span>Optimisation</span>
-                        <span>Tests</span>
-                    </div>
-                </div>
-
-                <div class="competence-card">
-                    <div class="competence-number">AC3</div>
-                    <h3>Sécurisation des données</h3>
-                    <p>Dans <a href="../projects/projet2.html">Pattes à Porter</a>, j'ai mis en place le <strong>hachage des mots de passe</strong> et des <strong>requêtes préparées</strong>. Mon <a href="../projects/projet4.html">alternance</a> m'a sensibilisée à la confidentialité des données clients.</p>
-                    <div class="competence-tags">
-                        <span>Hachage</span>
-                        <span>SQL Injection</span>
-                        <span>RGPD</span>
-                    </div>
-                </div>
-
-                <div class="competence-card">
-                    <div class="competence-number">AC4</div>
-                    <h3>Impact environnemental</h3>
-                    <p>En tant que <a href="../projects/projet4.html">technicienne d'assistance</a>, j'ai appris à utiliser les <strong>appels API</strong> avec parcimonie, consciente de leur <strong>impact environnemental</strong> lié à la consommation de ressources serveur.</p>
-                    <div class="competence-tags">
-                        <span>Green IT</span>
-                        <span>API</span>
-                        <span>Éthique</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contenu Administrer -->
-        <div id="admin" class="content">
-            <div class="content-header">
-                <h2>Administrer des systèmes informatiques</h2>
-                <p class="content-subtitle">Compétences en réseaux, virtualisation et sécurité système</p>
-            </div>
-
-            <div class="competence-grid">
-                <div class="competence-card">
-                    <div class="competence-number">AC1</div>
-                    <h3>Applications communicantes</h3>
-                    <p>Dans <a href="../projects/projet2.html">Pattes à Porter</a> et <a href="../projects/projet1.html">CTFD</a>, j'ai mis en œuvre des communications entre <strong>front-end, back-end et base de données</strong> avec des opérations CRUD complètes.</p>
-                    <div class="competence-tags">
-                        <span>REST API</span>
-                        <span>CRUD</span>
+                        <span>MVC</span>
+                        <span>PHP</span>
+                        <span>Python</span>
                         <span>Architecture</span>
                     </div>
                 </div>
 
                 <div class="competence-card">
-                    <div class="competence-number">AC2</div>
-                    <h3>Serveurs virtualisés</h3>
-                    <p>Dans <a href="../projects/projet1.html">CTFD</a>, j'ai déployé l'application via <strong>Docker sur un serveur virtualisé</strong> et configuré l'<strong>ouverture de ports</strong> pour de nouvelles pages web.</p>
+                    <div class="card-top-row">
+                        <div class="competence-number">AC2</div>
+                        <span class="status-badge acquis">Acquis</span>
+                    </div>
+                    <h3>Évolution d'applications existantes</h3>
+                    <p>À <a href="../projects/projet6.html">Renestance</a>, j'ai analysé des workflows Zoho déjà en place (CRM, Books, Flow) et les ai fait évoluer sans rupture de service. Chez <a href="../projects/projet4.html">LundiMatin</a>, le support N2 sur l'ERP m'a appris à comprendre et modifier un système existant sans repartir de zéro.</p>
                     <div class="competence-tags">
-                        <span>Docker</span>
-                        <span>Virtualisation</span>
-                        <span>Ports</span>
+                        <span>Zoho</span>
+                        <span>CRM</span>
+                        <span>ERP</span>
+                        <span>Évolution</span>
                     </div>
                 </div>
 
                 <div class="competence-card">
-                    <div class="competence-number">AC3</div>
-                    <h3>Sécurisation système</h3>
-                    <p>J'ai travaillé sur différents types de <strong>cryptographie</strong> (symétrique, asymétrique, hash) dans <a href="../projects/projet1.html">CTFD</a>, me permettant de sécuriser efficacement les données et services.</p>
+                    <div class="card-top-row">
+                        <div class="competence-number">AC3</div>
+                        <span class="status-badge acquis">Acquis</span>
+                    </div>
+                    <h3>Intégration en production</h3>
+                    <p><a href="../projects/projet2.html">Pattes à Porter</a> m'a confrontée à des contraintes réelles : sécurisation des sessions, chiffrement des mots de passe, validation en production. <a href="../projects/projet1.html">Break The Code</a> m'a appris à livrer une solution à un client externe avec des contraintes d'hébergement réelles via <strong>Docker chez Yggame</strong>.</p>
                     <div class="competence-tags">
-                        <span>Cryptographie</span>
-                        <span>Hash</span>
+                        <span>Docker</span>
+                        <span>Déploiement</span>
+                        <span>Production</span>
                         <span>Sécurité</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Contenu Gérer -->
-        <div id="data" class="content">
+        <!-- Contenu Collaborer -->
+        <div id="collaborer" class="content">
             <div class="content-header">
-                <h2>Gérer des données de l'information</h2>
-                <p class="content-subtitle">Compétences en modélisation, confidentialité et visualisation</p>
+                <h2>Collaborer au sein d'une équipe</h2>
+                <p class="content-subtitle">Manager une équipe informatique</p>
+                <p class="ce-codes">CE : CE6.01 | CE6.02 | CE6.03 | CE6.04</p>
             </div>
-
             <div class="competence-grid">
                 <div class="competence-card">
-                    <div class="competence-number">AC1</div>
-                    <h3>Modèles de données</h3>
-                    <p>Dans <a href="../projects/projet2.html">Pattes à Porter</a>, j'ai conçu un <strong>modèle entité-association</strong>. Dans <strong>Eliga</strong>, j'ai utilisé un <strong>modèle état-transition</strong> pour structurer les données efficacement.</p>
+                    <div class="card-top-row">
+                        <div class="competence-number">AC1</div>
+                        <span class="status-badge acquis">Acquis</span>
+                    </div>
+                    <h3>Veille numérique partagée</h3>
+                    <p>Dans mes deux alternances — <a href="../projects/projet6.html">Renestance</a> et <a href="../projects/projet4.html">LundiMatin</a> — je me suis <strong>auto-formée sur des outils nouveaux</strong> (Zoho Flow, Izberg, RoverCash, OpenSearch) et ai partagé cette connaissance via documentation et formation des collègues. La veille est intégrée à ma pratique quotidienne.</p>
                     <div class="competence-tags">
-                        <span>MCD</span>
-                        <span>UML</span>
-                        <span>Modélisation</span>
+                        <span>Veille</span>
+                        <span>Auto-formation</span>
+                        <span>Documentation</span>
+                        <span>Zoho</span>
                     </div>
                 </div>
 
                 <div class="competence-card">
-                    <div class="competence-number">AC2</div>
-                    <h3>Confidentialité des données</h3>
-                    <p>En <a href="../projects/projet4.html">alternance</a>, j'ai appliqué les principes du <strong>RGPD</strong> et utilisé des outils comme <strong>Bitwarden</strong> et <strong>Privnote</strong> pour un partage sécurisé des données.</p>
+                    <div class="card-top-row">
+                        <div class="competence-number">AC2</div>
+                        <span class="status-badge acquis">Acquis</span>
+                    </div>
+                    <h3>Enjeux de l'innovation numérique</h3>
+                    <p>Travailler chez <a href="../projects/projet6.html">Renestance</a> (startup SaaS Zoho) et chez <a href="../projects/projet4.html">LundiMatin</a> (éditeur logiciel ERP) m'a permis de comprendre comment la <strong>transformation numérique crée de la valeur économique</strong> dans deux contextes très différents.</p>
                     <div class="competence-tags">
-                        <span>RGPD</span>
-                        <span>Bitwarden</span>
-                        <span>Confidentialité</span>
+                        <span>SaaS</span>
+                        <span>Innovation</span>
+                        <span>Transformation numérique</span>
                     </div>
                 </div>
 
                 <div class="competence-card">
-                    <div class="competence-number">AC3</div>
-                    <h3>Restitution de données</h3>
-                    <p>Dans <a href="../projects/projet1.html">CTFD</a>, les défis étaient restitués dynamiquement avec des <strong>scripts Python</strong>. Dans <a href="../projects/projet2.html">PAP</a>, j'ai conçu une interface claire pour les produits et le panier.</p>
+                    <div class="card-top-row">
+                        <div class="competence-number">AC3</div>
+                        <span class="status-badge acquis">Acquis</span>
+                    </div>
+                    <h3>Conduite du changement</h3>
+                    <p>À <a href="../projects/projet6.html">Renestance</a>, je ne me contente pas de livrer une automatisation : je <strong>documente, explique et forme</strong> les équipes. Chez <a href="../projects/projet4.html">LundiMatin</a>, j'ai transmis mes connaissances ERP et accompagné les clients. C'est une posture de conduite du changement à l'échelle de l'entreprise.</p>
                     <div class="competence-tags">
-                        <span>Python</span>
-                        <span>UI/UX</span>
-                        <span>Visualisation</span>
+                        <span>Formation</span>
+                        <span>Conduite du changement</span>
+                        <span>Documentation</span>
                     </div>
                 </div>
 
                 <div class="competence-card">
-                    <div class="competence-number">AC4</div>
-                    <h3>Données hétérogènes</h3>
-                    <p>J'ai manipulé des données issues de <strong>bases SQL</strong>, d'<strong>API</strong>, de <strong>fichiers cryptés</strong> et de <strong>systèmes virtualisés</strong>, démontrant ma capacité d'adaptation.</p>
+                    <div class="card-top-row">
+                        <div class="competence-number">AC4</div>
+                        <span class="status-badge acquis">Acquis</span>
+                    </div>
+                    <h3>Management de projet</h3>
+                    <p>Sur <a href="../projects/projet1.html">Break The Code</a>, j'ai pratiqué <strong>Scrum</strong> dans un contexte client réel : sprints de 2 semaines, burndown chart, GitLab, équipe de 5. Sur <a href="../projects/projet2.html">Pattes à Porter</a>, j'ai coordonné l'équipe avec Microsoft To Do et Git, contribuant à la communication pluridisciplinaire.</p>
                     <div class="competence-tags">
-                        <span>SQL</span>
+                        <span>Scrum</span>
+                        <span>GitLab</span>
+                        <span>Sprints</span>
+                        <span>Coordination</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenu Conduire -->
+        <div id="conduire" class="content">
+            <div class="content-header">
+                <h2>Conduire un projet</h2>
+                <p class="content-subtitle">Participer à la conception et mise en œuvre d'un projet SI</p>
+                <p class="ce-codes">CE : CE5.01 | CE5.02 | CE5.03 | CE5.04</p>
+            </div>
+            <div class="competence-grid">
+                <div class="competence-card">
+                    <div class="card-top-row">
+                        <div class="competence-number">AC1</div>
+                        <span class="status-badge acquis">Acquis</span>
+                    </div>
+                    <h3>Impacts économiques et technologiques</h3>
+                    <p>À <a href="../projects/projet6.html">Renestance</a>, j'analyse l'impact de mes automatisations sur le <strong>temps de travail et la qualité des données</strong>. La restructuration en cours me conduit à formaliser ce bilan pour la première fois de manière structurée.</p>
+                    <div class="competence-tags">
+                        <span>Impact</span>
+                        <span>Analyse</span>
+                        <span>Automatisation</span>
+                        <span>Bilan</span>
+                    </div>
+                </div>
+
+                <div class="competence-card">
+                    <div class="card-top-row">
+                        <div class="competence-number">AC2</div>
+                        <span class="status-badge acquis">Acquis</span>
+                    </div>
+                    <h3>Intégration dans le SI</h3>
+                    <p>Chez <a href="../projects/projet6.html">Renestance</a>, chaque automatisation s'inscrit dans un <strong>écosystème Zoho interconnecté</strong> — une modification dans le CRM se répercute sur Books et Flow. Chez <a href="../projects/projet4.html">LundiMatin</a>, j'ai compris l'architecture ERP client et les interactions entre modules via Postman API.</p>
+                    <div class="competence-tags">
+                        <span>ERP</span>
+                        <span>CRM</span>
+                        <span>Zoho</span>
                         <span>API</span>
-                        <span>Multi-format</span>
+                    </div>
+                </div>
+
+                <div class="competence-card">
+                    <div class="card-top-row">
+                        <div class="competence-number">AC3</div>
+                        <span class="status-badge acquis">Acquis</span>
+                    </div>
+                    <h3>Adaptation du SI</h3>
+                    <p>La restructuration des automatisations à <a href="../projects/projet6.html">Renestance</a> est un exemple concret : je <strong>diagnostique l'existant</strong>, identifie les points de défaillance, redéfinis la logique, migre les intégrations et fais évoluer le système de manière <strong>progressive et documentée</strong>.</p>
+                    <div class="competence-tags">
+                        <span>SI</span>
+                        <span>Restructuration</span>
+                        <span>Migration</span>
+                        <span>Documentation</span>
                     </div>
                 </div>
             </div>
